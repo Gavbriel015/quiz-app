@@ -24,8 +24,8 @@ export default function Home() {
     }
 
     return (
-        <div className='max-w-[1500px] m-auto  w-full'>
-            <header className="m-auto w-full h-12 mt-16 flex items-center justify-between">
+        <div className='max-w-[1500px] m-auto w-full'>
+            <header className="m-auto w-full h-12 mt-4 sm:mt-16 flex items-center justify-between">
                 <div className='flex items-center pl-8'>
                     <div className={`p-1`}>
                         <img src={category.icon} alt={category.name} />
@@ -39,9 +39,9 @@ export default function Home() {
             </header>
             {category.name === '' && category.icon ===
                 '' ?
-                <div className='pt-16 flex mx-10'>
+                <div className='lg:pt-16 flex flex-col lg:flex-row mx-10'>
                     <div className='basis-2/3'>
-                        <h1 className=' dark:text-white text-[#313E51] text-[65px] m-0 w-2/3'>
+                        <h1 className=' dark:text-white text-[#313E51] text-[40px] lg:text-[65px] m-0 w-full lg:w-2/3'>
                             Welcome to the <span className='font-bold'>FrontEnd Quiz!</span>
                         </h1>
                         <div>
